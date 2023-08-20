@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Clone by Ishan J.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="overflow-x-hidden box-border">
+      <!-- nav bar -->
+      <nav class="bg-lightBlue">
+        <div
+          class="flex justify-between w-90% max-w-[1200px] mx-auto py-5 px-8 items-center"
+        >
+          <!-- logo -->
+          <img src="Images/logo.svg" alt="" class="w-[8rem] cursor-pointer" />
+
+          <!-- nav links -->
+          <ul class="font-ggsans text-white font-semibold flex gap-10">
+            <li class="hover:underline">Download</li>
+            <li class="hover:underline">Nitro</li>
+            <li class="hover:underline">Discover</li>
+            <li class="hover:underline">Safety</li>
+            <li class="hover:underline">Support</li>
+            <li class="hover:underline">Blog</li>
+            <li class="hover:underline">Careers</li>
+          </ul>
+
+          <!-- open discord button -->
+          <button
+            class="bg-white py-2 px-4 font-ggsans rounded-full transition-all duration-500 hover:shadow-xl hover:text-lightBlue"
+          >
+            Open Discord
+          </button>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <section class="bg-lightBlue">
+        <div
+          class="relative  w-[100vw] h-[80vh] flex justify-center items-center overflow-hidden"
+        >
+          <!-- main heading content -->
+          <div class="text-white w-full flex flex-col gap-6 items-center z-20">
+            <h1 class="uppercase text-6xl font-[abc-gintoNord]">
+              Imagine A Place...
+            </h1>
+            <p class="leading-7 tracking-wide text-lg w-[50rem] text-center">
+              ...where you can belong to a school club, a gaming group, or a
+              worldwide art community. Where just you and a handful of friends
+              can spend time together. A place that makes it easy to talk every
+              day and hang out more often.
+            </p>
+            <!-- buttons group -->
+            <div
+              class="flex mt-3 justify-evenly font-ggsans text-lg items-center w-[40rem]"
+            >
+              <button
+                class="flex gap-5 bg-white rounded-full text-black py-3 px-8 items-center justify-center transition-all duration-300 hover:shadow-xl hover:text-lightBlue"
+              >
+                <!-- download button -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-[24px] h-[24px]"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download for Windows
+              </button>
+              <button
+                class="bg-[#23272a] rounded-full px-8 py-3 transition-all duration-300 hover:bg-slate-900 hover:opacity-90 hover:drop-shadow-xl"
+              >
+                Open Discord in your browser
+              </button>
+            </div>
+          </div>
+
+          <!-- background images -->
+          <img
+            src="Images/Image0.svg"
+            alt=""
+            class="absolute bottom-0 left-0 right-0 w-full z-10"
+          />
+          <img
+            src="Images/Image1.svg"
+            alt=""
+            class="absolute -right-[18rem] bottom-0 z-10"
+          />
+          <img src="Images/Image2.svg" alt="" class="absolute -left-[20rem] bottom-0 z-10">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
