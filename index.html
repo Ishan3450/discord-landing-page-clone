@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Clone by Ishan J.</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="overflow-x-hidden box-border">
       <!-- nav bar -->
       <nav class="bg-lightBlue">
         <div
-          class="flex justify-between w-90% max-w-[1200px] mx-auto py-5 px-8 items-center"
+          class="flex justify-between w-90% max-w-[1200px] mx-auto py-5 px-4 sm:px-8 items-center nav-bar"
         >
           <!-- logo -->
           <img src="Images/logo.svg" alt="" class="w-[8rem] cursor-pointer" />
 
           <!-- nav links -->
-          <ul class="font-ggsans text-white font-semibold flex gap-10">
+          <ul
+            class="font-ggsans text-white font-semibold gap-10 hidden lg:flex"
+          >
             <li class="hover:underline">Download</li>
             <li class="hover:underline">Nitro</li>
             <li class="hover:underline">Discover</li>
@@ -27,26 +30,40 @@
             <li class="hover:underline">Careers</li>
           </ul>
 
-          <!-- open discord button -->
-          <button
-            class="bg-white py-2 px-4 font-ggsans rounded-full transition-all duration-500 hover:shadow-xl hover:text-lightBlue"
-          >
-            Open Discord
-          </button>
+          <div class="flex sm:gap-3 items-center">
+            <!-- open discord button -->
+            <button
+              class="bg-white py-2 px-4 font-ggsans rounded-full transition-all duration-500 hover:shadow-xl hover:text-lightBlue"
+            >
+              Open Discord
+            </button>
+  
+            <!-- hamburger menu icon -->
+            <div class="inline-block lg:hidden">
+              <svg width="40" height="40" viewBox="0 0 40 40" class="text-white">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M33.3327 10H6.66602V15H33.3327V10ZM6.66602 18.3317H33.3327V23.3317H6.66602V18.3317ZM6.66602 26.665H33.3327V31.665H6.66602V26.665Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
       </nav>
 
       <!-- hero section -->
       <section class="bg-lightBlue">
         <div
-          class="relative w-[100vw] h-[80vh] flex justify-center items-center overflow-hidden"
+          class="relative w-[100vw] min-h-[80vh] flex lg:justify-center items-center overflow-hidden md:flex-row flex-col"
         >
           <!-- main heading content -->
-          <div class="text-white w-full flex flex-col gap-6 items-center z-20">
-            <h1 class="uppercase text-6xl font-[abc-gintoNord]">
+          <div class="text-white w-full md:w-[50%] lg:w-full flex flex-col gap-6 lg:items-center z-20 px-2 sm:pl-10 lg:pl-0 my-[8rem] lg:my-0">
+            <h1 class="uppercase text-4xl md:text-6xl font-[abc-gintoNord]">
               Imagine A Place...
             </h1>
-            <p class="leading-7 tracking-wide text-lg w-[50rem] text-center">
+            <p class="leading-7 tracking-wide md:text-lg max-w-[50rem] lg:text-center">
               ...where you can belong to a school club, a gaming group, or a
               worldwide art community. Where just you and a handful of friends
               can spend time together. A place that makes it easy to talk every
@@ -54,10 +71,10 @@
             </p>
             <!-- buttons group -->
             <div
-              class="flex mt-3 justify-evenly font-ggsans text-lg items-center w-[40rem]"
+              class="flex mt-3 justify-evenly font-ggsans text-lg items-start gap-2 lg:gap-0 lg:items-center max-w-[40rem] flex-col lg:flex-row w-full"
             >
               <button
-                class="flex gap-5 bg-white rounded-full text-black py-3 px-8 items-center justify-center transition-all duration-300 hover:shadow-xl hover:text-lightBlue"
+                class="flex gap-5 bg-white rounded-full text-black py-3 px-8 items-center justify-center transition-all duration-300 hover:shadow-xl hover:text-lightBlue w-fit"
               >
                 <!-- download button -->
                 <svg
@@ -77,12 +94,16 @@
                 Download for Windows
               </button>
               <button
-                class="bg-[#23272a] rounded-full px-8 py-3 transition-all duration-300 hover:bg-slate-900 hover:opacity-90 hover:drop-shadow-xl"
+                class="bg-[#23272a] rounded-full px-8 py-3 transition-all duration-300 hover:bg-slate-900 hover:opacity-90 hover:drop-shadow-xl w-fit"
               >
                 Open Discord in your browser
               </button>
             </div>
           </div>
+
+          <!-- <div class="md:hidden inline-block">
+            <img src="Images/Image2.svg" alt="" class="mr-[800px]">
+          </div> -->
 
           <!-- background images -->
           <img
@@ -93,12 +114,12 @@
           <img
             src="Images/Image1.svg"
             alt=""
-            class="absolute -right-[18rem] bottom-0 z-10"
+            class="absolute lg:-right-[18rem] lg:bottom-0 bottom-0 -right-[8rem] z-10 hidden md:inline-block"
           />
           <img
             src="Images/Image2.svg"
             alt=""
-            class="absolute -left-[20rem] bottom-0 z-10"
+            class="lg:absolute lg:-left-[20rem] bottom-0 z-10 md:hidden lg:inline-block block relative mr-[10rem] md:mr-0"
           />
         </div>
       </section>

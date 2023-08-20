@@ -16,3 +16,10 @@
     font-family: abc-gintoNord;
     src: url(./Fonts/Ginto-Nord/Ginto-Nord-600.woff2);
 }
+
+@media (max-width: 350px) {
+    .nav-bar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
